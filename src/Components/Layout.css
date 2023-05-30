@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .wish, .wish1
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: absolute;
+    top: 3in;
+    left: 2in;
+}
+.wish1
+{
+    top: 4in;
+    left: 7in;
+    color: purple;
+} */
+
+body img
+    {
+       object-fit:"cover"; 
+    }
+
+.navbarItems
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    width:95%;
+    height: 80px;
+    border-radius: 13px;
+    background-color: white;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%);
+}
+.navbar-logo
+{
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navbar-menu
+{
+    display: grid;
+    grid-template-columns: repeat(7, auto);   
+    gap: 10px;
+    top: 24px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbarItems img
+{
+    position: absolute;
+    left: 2.4in;
+    width: 7rem;
+    height: 7rem;
+    top: -0.2in;
+}
+.nav-links
+{
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 0.1rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nav-links i{
+    color: black;
+}
+
+.nav-links
+{
+    color: black;
+}
+
+.nav-links:hover
+{
+    background-color: rgba(87, 190, 87, 0.726);
+    color:#fff;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+.nav-links i:hover
+{
+    color: white;
+}
+
+button
+{
+    display: none;
+}
+
+    .nav-links-mobile
+{
+    padding: 0.5rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor:pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-links-mobile:hover
+{
+    background-color: #6ceeff;
+    cursor:pointer;
+    color: white;
+}
+
+.menu-icons
+{
+    display: none;
+}
+
+@media screen and (max-width: 850px)
+{
+    body
+    {
+        overflow: hidden;
+    }
+    body img
+    {
+       /* src:url('../Assets/eiffeltower.jpeg') ; */
+       width: 850px;
+       height: 600px;
+       object-fit: cover;
+    }
+    .menu-icons
+{
+    display: block;
+    
+}
+
+.nav-links i:hover
+{
+    color: darkred;
+}
+
+/* .wish, .wish1
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: absolute;
+    top: 2in;
+    left: 1in;
+    width: 3in;
+}
+.wish1
+{
+    top: 3.7in;
+    left: 1.8in;
+    color: purple;
+} */
+
+.menu-icons i
+{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color:rgb(141, 7, 141);
+}
+    .navbarItems
+    {
+        z-index: 99;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+     transform: translate(-50%);
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    }
+    .navbar-menu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: rgb(144, 238, 144);
+        align-items: stretch;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        text-align: center;
+    }
+    .navbar-menu.active
+    {
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+    }
+    .nav-links
+    {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        padding: 2r em 0;
+        cursor: pointer;
+    }
+    .nav-links:hover
+    {
+        background: #00ff22d0;
+        transition-timing-function: none;
+        color: #4d0303;
+        box-sizing: content-box;
+    }
+    button
+    {
+        display:none;
+    }
+    .nav-links-mobile
+    {
+        display:block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #34c2c7;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    .nav-links-mobile:hover
+    {
+        color: white;
+    }
+}

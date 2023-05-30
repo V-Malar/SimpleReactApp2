@@ -1,0 +1,44 @@
+body
+{
+    overflow: auto;
+}
+.style
+{
+    position: absolute;
+    top: 1.5in;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2in;
+    row-gap: 0.1in;
+    justify-content: center;
+    color: wheat;
+}
+.bn
+{
+    position: absolute;
+    top: 6in;
+    left: 6.5in;
+}
+@media screen and (max-width: 850px)
+{
+    body{
+        overflow: auto;
+        
+    }
+    
+    .style
+    {
+     display: grid;
+     top: 1.2in;
+     grid-template-columns: 30% 30%;
+
+    }
+    .bn
+    {
+        
+        position: absolute;
+        top: 5.8in;
+        left: 2.9in;
+    }
+}

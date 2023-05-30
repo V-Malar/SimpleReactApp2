@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wish
+{
+    text-shadow: 5px 5px 6px rgb(179, 4, 12);
+}
+.wish,
+.wish1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: absolute;
+    top: 1.7in;
+    left: 1in;
+}
+.pro p{
+    text-align: justify;
+    color: red;
+    padding: 13px;
+}
+.wish1 {
+    background-color: rgba(234, 241, 247, 0.459);
+    top: 2.6in;
+    left: 1in;
+    color: rgb(49, 2, 49);
+    width: 12in;
+    height: 3.11in;
+    text-align: justify;
+    padding: 0.4in;
+    font-size: 1.5rem;
+    box-shadow: 20px 20px 50px 10px rgb(225, 192, 255) inset;
+}
+
+.wish1 span span
+{
+    box-shadow: 20px 20px 50px 10px rgb(192, 251, 255) inset;
+    float: right;
+}
+
+.wish1 span i
+{
+    cursor: pointer;
+}
+
+body img {
+    width: 100vw;
+    height: 100vh;
+}
+
+body #imgA {
+    width: 100vw;
+    height: 110vh;
+    object-fit: cover;
+}
+
+body {
+    overflow: auto;
+}
+.style {
+    position: absolute;
+    top: 1.2in;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2in;
+    row-gap: 0.1in;
+    justify-content: center;
+    color: wheat;
+}
+
+.bn {
+    position: absolute;
+    top: 6in;
+    left: 6.5in;
+}
+.bags{
+    position: absolute;
+    top: 1.5in;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 0.5in;
+    box-shadow: 20px 20px 50px 10px rgba(162, 78, 241, 0.479) inset;
+}
+.bags li img
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid grey;
+}
+.bags li
+{
+    border: 1px solid rgb(255, 189, 255);
+    box-shadow: 20px 20px 50px 10px rgb(184, 255, 228) inset;
+}
+.bags li h5, .bags li h6
+{
+    padding: 12px;
+}
+.bags li i
+{
+    padding: 5px;
+}
+.bags li:hover
+
+{
+    cursor: pointer;
+    color: rgb(6, 116, 116);
+    scale: 1.2;
+}
+.bags li h5:hover
+{
+    color:blueviolet;
+}
+.bird
+{
+    z-index: 1;
+    position: absolute;
+    width: 4in;   
+    top: 2in;
+    left: 1.5in;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 20px;
+    border-radius: 25%;
+}
+.bird img
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;    
+}
+.bird h1
+{
+    background-color: rgba(2, 229, 245, 0.644);
+    padding: 22px;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    /* color:rgb(20, 87, 4); */
+    color: black;
+}
+.bird h4
+{
+    text-align: right;
+    background-color: rgba(2, 245, 164, 0.445);
+    padding: 17px;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+}
+.rating 
+{
+    position: absolute;
+    display: flex;
+    transform: rotateY(180deg);
+}
+.rating input
+{
+    display: none ;
+}
+.rating label
+{
+    cursor: pointer;
+    display: block;
+    width: 30px;
+}
+.rating label::before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    color: #fffb1f;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label::after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    color: #fffb1f;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after, .rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+.review
+{
+    display: flex;
+    width: 3.5in;
+    height: 3.5in;
+}
+.review p
+{
+    position: absolute;
+    top: 2.3in;
+    left: 0.6in;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    font-size: 24px;
+}
+.review
+{
+    background-color: rgba(0, 255, 255, 0.541);
+    height: 3in;
+    width: 2in;
+}
+.gridgot
+{
+    display: grid;
+    position: absolute;
+    left: 2.9in;
+    top: 3in;
+    grid-template-columns: 25% 26% 30%;
+    height: 2.4in;
+    gap: 1in;
+    width: 8in;
+}
+.rev
+{
+    position: absolute;
+    top: 1.5in;
+    font-weight: bold;
+    padding: 0 7px;
+}
+.rev h1
+{
+    text-align: center;
+}
+@media screen and (max-width: 550px) {
+
+
+    body #imgA {
+        width: 850px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .wish,
+    .wish1 {
+        font-family: 'Poppins', sans-serif;
+        color: yellow;
+        position: absolute;
+        top: 1.3in;
+        left: 1in;
+        width: 3in;
+    }
+
+    .wish1 {
+        top: 2in;
+        left: 0.5in;
+        font-size: 0.14in;
+        width: 4in;
+        height: 3in;
+        color: purple;
+    }
+    .wish1 span
+    {
+        position: absolute;
+        top: 3.2in;
+        left: 0in;
+    }
+    .wish1 span span
+    {
+        position: absolute;
+        top: -0.01in;
+        left:1.2in;
+        width: 2.88in;
+        font-size: 0.67rem;
+    }
+    body {
+        overflow: auto;
+
+    }
+
+    .style {
+        display: grid;
+        top: 1.2in;
+        grid-template-columns: 35% 35%;
+        gap: 0.2in;
+
+    }
+    
+    .bn {
+
+        position: absolute;
+        top: 6.3in;
+        left: 2.1in;
+    }
+    .bags{
+        position: absolute;
+        top: 1.3in;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 20% 20%;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        gap: 0.5in;
+        background-color: rgba(219, 238, 255, 0.651);
+    }
+    .bags li
+{
+    border: none;
+}
+.gridgot
+{
+    top: 3.5in;
+    left: 0in;
+    gap: 0.2in;
+}
+.review
+{
+    height: 2.67in;
+}
+.pro p{
+    text-align: justify;
+    color: red;
+    padding: 13px;
+}
+}
